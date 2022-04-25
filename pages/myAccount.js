@@ -7,5 +7,7 @@ module.exports = {
   waitForPageLoad() {
     I.waitForVisible(this.centerInput);
   },
-  
+  checkMyAccountPageIsVisible(){
+    I.see('My account');
+  },
 }

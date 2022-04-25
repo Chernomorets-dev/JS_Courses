@@ -22,6 +22,7 @@ Scenario('test something', ({ I, homePage, authPage, createAccountPage, myAccoun
     authPage.clickCreateAccount();
     createAccountPage.fillNewUserForm(user);
     myAccountPage.waitForPageLoad(); 
-    pause();
-    I.see('My account');
+    myAccountPage.checkMyAccountPageIsVisible();
+    
+    
 });
