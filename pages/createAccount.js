@@ -18,8 +18,6 @@ module.exports = {
   submitAccounttButton: { css: '#submitAccount' },
   
   
-
-
   fillNewUserForm(user) {
     this.waitForPageLoad();
     I.click(this.genderSelect);
@@ -37,7 +35,7 @@ module.exports = {
     I.fillField(this.addressInput, user.address);
     I.fillField(this.cityInput, user.city);
     I.fillField(this.phoneInput, user.phone);
-    
+    I.click(this.submitAccounttButton);
 
 
 
@@ -46,9 +44,4 @@ module.exports = {
   waitForPageLoad() {
     I.waitForVisible(this.firstNameInput);
   },
-  clickCreateAccount() {
-    I.click(this.submitAccounttButton);
-},
-
-
 }

@@ -25,7 +25,6 @@ exports.config = {
     homePage: './pages/home.js',
     authPage: './pages/auth.js',
     createAccountPage: './pages/createAccount.js',
-    myAccountPage: './pages/myAccount.js',
   },
   bootstrap: null,
   mocha: {},

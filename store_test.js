@@ -15,15 +15,12 @@ let user = {
 
 Feature('Store');
 
-Scenario('test something', ({ I, homePage, authPage, createAccountPage}) => {
+Scenario('test something', ({ I, homePage, authPage, createAccountPage }) => {
     homePage.openStore();
     homePage.clickSignIn();
     authPage.fillNewUserEmail(Date.now() + '@test.com');
     authPage.clickCreateAccount();
     createAccountPage.fillNewUserForm(user);
-    createAccountPage.clickCreateAccount();
-   
-
     pause();
-    I.see('My Account');
+    I.see('My account');
 });
