@@ -16,8 +16,16 @@ exports.config = {
       show: true,
       browser: 'chromium',
       waitForNavigation: 'networkidle0',
-      waitForTimeout: 10000,
-      timeout: 10000,
+      waitForTimeout: 90000,
+      timeout: 90000,
+      windowSize: '900x1000',
+      video: true,
+    },
+    Generator: {
+      require: './generator_helper.js',
+    },
+    ChaiWrapper: {
+      require: 'codeceptjs-chai'
     }
   },
   include: {
@@ -26,8 +34,14 @@ exports.config = {
     authPage: './pages/auth.js',
     createAccountPage: './pages/createAccount.js',
     myAccountPage: './pages/myAccount.js',
+    womanPage: './pages/woman.js',
   },
   bootstrap: null,
   mocha: {},
-  name: 'JS_Courses'
+  name: 'JS_Courses',
+  plugins: {
+    tryTo: {
+      enabled: true
+    }
+  }
 }

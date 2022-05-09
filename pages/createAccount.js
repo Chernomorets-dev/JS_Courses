@@ -18,6 +18,7 @@ module.exports = {
   submitAccounttButton: { css: '#submitAccount' },
   
   
+  
   fillNewUserForm(user) {
     this.waitForPageLoad();
     I.click(this.genderSelect);
