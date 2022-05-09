@@ -6,9 +6,9 @@ module.exports = {
   womanButton: ({xpath: '//*[@id="block_top_menu"]/ul/li[1]/a'}),
   
 
-  waitForPageLoad() {
-    I.waitForVisible(this.centerInput);
-  },
+  //waitForPageLoad() {
+    //I.waitForVisible(this.centerInput);
+  //},
   checkMyAccountPageIsVisible(){
     I.see('My account');
   },
